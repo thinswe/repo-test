@@ -9,6 +9,6 @@ Route::name('post.')->group(function(){
 
     Route::get('/create', [PostController::class, 'create'])->name('create');
 
-    Route::post('/', [PostController::class, 'store'])->name('store');
+    Route::post('/store', [PostController::class, 'store'])->name('store');
 
 });
